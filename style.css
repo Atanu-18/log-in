@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  /* background-color: antiquewhite; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(
+    ellipse 200% 100% at bottom left,
+    #7818c2,
+    #eaeefe 60%
+  );
+  background-repeat: no-repeat;
+}
+form {
+  width: 800px;
+  border: 0.5px solid gray;
+  border-radius: 10px;
+  padding: 40px;
+  backdrop-filter: blur(16px);
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+form > h2 {
+  font-weight: 400;
+  font-size: 17px;
+  color: #a7a4a4;
+}
+
+form .social-btns-container {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(159, 159, 160, 0.3);;
+  display: flex;
+  gap: 10px;
+}
+
+form .social-btn {
+  padding: 10px 15px;
+  border: 0.5px solid rgba(209, 213, 219, 0.3);
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255);
+  filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.25));
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+form .social-btn i {
+  font-size: 20px;
+}
+
+form .social-btn:hover {
+  background-color: rgb(249, 249, 249);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.5));
+  transform: scale(1.05);
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+}
+
+form .form-container {
+    /* background: #000; */
+    padding: 10px 0;
+    display: flex;
+    gap: 5px;
+}
+form .form-container label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+form .form-container input{
+    width: 100%;
+    border-radius: 3px;
+    padding: 12px 17px;
+    border: 0.5px solid rgba(141, 144, 147, 0.3);
+}
+form .form-container input:focus{
+    outline: none;
+}
+form .form-group-1, .form-group-2{
+    width: 50%;
+}
+form .login-btn-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+form .form-links{
+    font-size: 15px;
+    color: gray;
+}
+form .form-links a{
+    text-decoration: underline;
+    color: gray;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+form .login-btn-container button{
+    padding: 8px 45px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    border: 0.5px solid rgba(141, 144, 147, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form .login-btn-container button:hover{
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.25));
+}
+
+form .form-create-ac{
+    margin-top: 10px;
+    text-align: center;
+}
